@@ -145,14 +145,3 @@ pm2 save
 | `Unable to parse range` | `SHEET_NAME` di `.env` tidak sama persis dengan nama tab di Google Sheets |
 | Data masuk tapi kolom tertukar | Cek urutan header sheet: `No, Tanggal, Nama, Pengeluaran, Pemasukan, Total` |
 | Koneksi WA sering putus | Baileys otomatis reconnect; kalau tetap gagal, hapus folder `auth_info` dan scan ulang |
-
-## Keamanan
-
-- `credentials.json` dan `.env` berisi kredensial sensitif — **jangan** di-commit ke Git publik atau dibagikan ke siapa pun.
-- Tambahkan ke `.gitignore`:
-  ```
-  credentials.json
-  .env
-  auth_info/
-  node_modules/
-  ```
